@@ -1,10 +1,35 @@
 .contenedor{
-	background-image: 
+	background-image: url("http://www.skringers.com/wp-content/uploads/Cute-backgrounds-for-computer-10.gif"); 
+}
+.form{
+	margin-left: 40%;
+	margin-top: 20%;
 }
 .area {
-	width: 80%;
+	width: 40%;
 	height: 90px;
+	background-color: transparent;
 }
 .input{
-	width: 30%;
+	width: 87px;
+	height: 28px;
+	background-color: white;
+
+}
+.texto{
+	width: 40%;
+	height: 50px;
+	margin-left: 40%;
+	margin-top: 3%;
+	background-color: transparent;
+}
+.divis{
+	width: 40%;
+	height: 50px;
+	margin-left: 10%;
+	margin-top: 3%;
+	border : 2px solid pink;
+}
+.red{
+	color: red;
 }
