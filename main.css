@@ -3,33 +3,44 @@
 }
 .form{
 	margin-left: 40%;
-	margin-top: 20%;
+	margin-top: 15%;
 }
 .area {
 	width: 40%;
-	height: 90px;
 	background-color: transparent;
+	overflow: hidden;
 }
 .input{
-	width: 87px;
-	height: 28px;
-	background-color: white;
+	width: 10%;
+	height: 20px;
+	background-color: transparent;
+	border :2px solid pink;
+	text-align: center;
 
 }
 .texto{
 	width: 40%;
-	height: 50px;
+	height: auto;
 	margin-left: 40%;
 	margin-top: 3%;
 	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.azul{
+	font-family: "Courgette" ,sans-serif;
 }
 .divis{
 	width: 40%;
-	height: 50px;
 	margin-left: 10%;
 	margin-top: 3%;
-	border : 2px solid pink;
+	word-wrap: break-word;
+	background-color: pink;
 }
-.red{
-	color: red;
+.buton{
+	background-color: pink;
+	border-radius: 15px;
+}
+h2{
+	font-family: "Open+Sans:400,700,400italic", sans-serif;
 }
