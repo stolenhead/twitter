@@ -15,6 +15,13 @@ window.addEventListener("load", function() {
 		    padre.appendChild(parrafo);
 		    parrafo.classList.toggle("divis");
 		    padre.insertBefore(parrafo,padre.childNodes[0]);
+        var horitas =new Date();
+        var horas=horitas.getHours();
+         var min= horitas.getMinutes();
+        var hor = document.createElement("h5");
+        hor.classList.toggle("divi");
+        hor.innerHTML= " "+ horas+":"+ min;
+        parrafo.insertBefore(hor,parrafo.childNodes[0]);
 		    textoArea.value= "";
     	  boton.disabled=true; 
               //noborrar
