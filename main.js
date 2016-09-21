@@ -7,8 +7,7 @@ window.addEventListener("load", function() {
       var textoArea =document.getElementById("caracteres");
       var texto = document.getElementById("caracteres").value; 
       crear();
-
-	  function crear(){	
+    function crear(){	
 		  var parrafo = document.createElement("div");
 		  var padre = document.getElementById("seccion");
 		    parrafo.innerHTML = texto ;
@@ -27,8 +26,24 @@ window.addEventListener("load", function() {
               //noborrar
     }//noborrar
   });
+      //nope
       var textBox =document.getElementById("caracteres");
-      textBox.addEventListener("keydown", autosize);
+      textBox.addEventListener("keyup", deleted); 
+    function deleted(){
+       var botons = document.getElementById("boton");
+       var longi = this.value.length;
+       var breakLines = this.value.match(/\n/g);
+
+       if (this.value.trim().length == 0){
+           botons.disabled= true;
+       }
+       else{
+           botons.disabled= false;
+       }
+     }  
+      //nope
+      var textBox =document.getElementById("caracteres");
+      textBox.addEventListener("keydown", autosize); 
         function autosize(){
           var limit = this;
           limit.style.cssText = 'height:auto; padding:0';
@@ -42,7 +57,7 @@ window.addEventListener("load", function() {
       var limite = 140;
       var contadorDeNumbers=document.getElementById("contador");
       var longitud = document.getElementById("caracteres").value.length;
-      var count = contadorDeNumbers.innerHTML= limite-longitud;
+      contadorDeNumbers.innerHTML= limite-longitud;
         if(longitud>=140){ 
             contadorDeNumbers.style.color ="red";                              
             boton.disabled=true;
@@ -54,7 +69,7 @@ window.addEventListener("load", function() {
             contadorDeNumbers.style.color ="green";
             boton.disabled=false;
         }
-    }
+      }
 });
 
     
