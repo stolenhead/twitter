@@ -5,12 +5,13 @@ window.addEventListener("load", function() {
     boton.addEventListener("click", function(e) {
       e.preventDefault();
       var textoArea =document.getElementById("caracteres");
-      var texto = document.getElementById("caracteres").value; 
+      var texto = document.getElementById("caracteres").value;
+      var repla = texto.replace(/\n/g, "<br>");//salto de linea global 
       crear();
     function crear(){	
 		  var parrafo = document.createElement("div");
 		  var padre = document.getElementById("seccion");
-		    parrafo.innerHTML = texto ;
+		    parrafo.innerHTML = repla ;
 		    padre.appendChild(parrafo);
 		    parrafo.classList.toggle("divis");
 		    padre.insertBefore(parrafo,padre.childNodes[0]);
@@ -23,10 +24,8 @@ window.addEventListener("load", function() {
         parrafo.insertBefore(hor,parrafo.childNodes[0]);
 		    textoArea.value= "";
     	  boton.disabled=true; 
-              //noborrar
     }//noborrar
   });
-      //nope
       var textBox =document.getElementById("caracteres");
       textBox.addEventListener("keyup", deleted); 
     function deleted(){
