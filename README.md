@@ -1,6 +1,6 @@
 # twitter
 ##Versión 0.0.1:
-1.S diseñò un formulario que tenga un textarea y un botón.
+1.Se diseñò un formulario que tenga un textarea y un botón.
 
 2.Se agregò  un evento de click al botón o un evento de submit al formulario
 
@@ -11,7 +11,7 @@
 
 6. Y una funcion Contar para la cantidad de caracteres de forma regresiva.
 
-7.Versión 0.0.3:
+##.Versión 0.0.3:
 8. Una condcion Si pasa los 140 caracteres, deshabilitar el botón.
 Si pasa los 120 caracteres, mostrar el contador con OTRO color.
 
@@ -26,4 +26,5 @@ Si pasa los 120 caracteres, mostrar el contador con OTRO color.
 
 14. Con ora funcion deshabilitar la funcion de la tecla enter y añadir una que agrande la pantalla automaticamente y no aparezca el scroll. 
 ##Versión 0.0.6: 
-s creo una variable horas para indiar  la hora en que se publicó el tweet. En el formato de 24 horas: hh:mm
+
+15. se creo una variable horas para indiar  la hora en que se publicó el tweet. En el formato de 24 horas: hh:mm
